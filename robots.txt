@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://amanuelfeyissa.pages.dev/sitemap.xml
