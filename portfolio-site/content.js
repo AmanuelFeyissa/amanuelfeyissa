@@ -35,22 +35,37 @@ window.portfolioData = {
   ],
   projects: [
     {
-      id: "01", category: "DATA SCIENCE", title: "Machine Learning-Based Fraud Detection",
+      id: "01",
+      slug: "fraud-detection",
+      category: "DATA SCIENCE",
+      title: "Machine Learning-Based Fraud Detection",
       description: "A comparative fraud-detection study using real-world and synthetic digital-banking datasets. Built and evaluated Random Forest, XGBoost, LightGBM, and neural-network models.",
       tags: ["Python", "Scikit-Learn", "SMOTE", "XGBoost"],
-      results: "Balanced detection performance across highly imbalanced fraud data.", link: "#"
+      results: "Balanced detection performance across highly imbalanced fraud data.",
+      link: "project.html?project=fraud-detection",
+      detailIntro: "This project examines how machine learning can identify suspicious banking transactions while managing the class imbalance that makes fraud-detection work challenging. Add your full case study, screenshots, and links here."
     },
     {
-      id: "02", category: "IDENTITY SECURITY", title: "Commercial Bank IAM Deployment",
+      id: "02",
+      slug: "iam-deployment",
+      category: "IDENTITY SECURITY",
+      title: "Commercial Bank IAM Deployment",
       description: "Contributed to an enterprise-wide IAM implementation, integrating more than 30 banking applications and helping align access controls with business and risk requirements.",
       tags: ["EmpowerID", "SAML", "OIDC", "OAuth"],
-      results: "30+ application integrations delivered.", link: "#"
+      results: "30+ application integrations delivered.",
+      link: "project.html?project=iam-deployment",
+      detailIntro: "This enterprise identity program focused on connecting banking applications to a unified IAM platform while supporting secure, standards-based authentication and authorization. Add your full case study, screenshots, and links here."
     },
     {
-      id: "03", category: "AUTOMATION", title: "IAM Workflow Automation",
+      id: "03",
+      slug: "iam-automation",
+      category: "AUTOMATION",
+      title: "IAM Workflow Automation",
       description: "Developed automated IAM workflows using C# and SQL to support reliable, repeatable identity operations and access-management processes.",
       tags: ["C#", "SQL", "IAM", "Automation"],
-      results: "Designed for scalable enterprise operations.", link: "#"
+      results: "Designed for scalable enterprise operations.",
+      link: "project.html?project=iam-automation",
+      detailIntro: "This automation work streamlined repeatable identity operations through C# and SQL, helping improve consistency and scalability across IAM workflows. Add your full case study, screenshots, and links here."
     }
   ],
   experience: [
