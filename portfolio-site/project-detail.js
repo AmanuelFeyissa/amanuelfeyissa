@@ -3,6 +3,8 @@ const projectKey = params.get('project');
 const project = window.portfolioData.projects.find(({ slug }) => slug === projectKey) || window.portfolioData.projects[0];
 
 document.title = `${project.title} | Amanuel Feyissa`;
+document.querySelector('meta[name="description"]').setAttribute('content', `${project.description} — a case study by Amanuel Feyissa Kussa.`);
+document.querySelector('#project-canonical').href = `https://amanuelfeyissa.kussa.workers.dev/project.html?project=${project.slug}`;
 document.querySelector('#project-category').textContent = project.category;
 document.querySelector('#project-number').textContent = `PROJECT // ${project.id}`;
 document.querySelector('#project-title').textContent = project.title;
