@@ -16,14 +16,33 @@
   <body>
     <div class="noise" aria-hidden="true"></div>
     <div class="grid" aria-hidden="true"></div>
+    <header class="nav"><a class="brand" href="index.html#top" aria-label="Home">AF<span>_</span></a><div class="mini-nav"><a href="index.html#work">Projects</a><a href="index.html#contact">Contact</a></div></header>
     <main class="detail-wrap">
       <a class="back-link" href="index.html#work">← Back to portfolio</a>
       <p class="eyebrow" id="project-category"></p>
       <p class="project-number" id="project-number"></p>
       <h1 id="project-title"></h1>
+      <p class="status-line" id="project-status"></p>
       <p class="detail-intro" id="project-intro"></p>
       <div class="detail-tags" id="project-tags"></div>
+
+      <section class="detail-section">
+        <h2>Brief</h2>
+        <p id="project-brief"></p>
+      </section>
+
+      <section class="detail-section">
+        <h2 id="project-approach-heading">Approach</h2>
+        <ul class="approach-list" id="project-approach"></ul>
+      </section>
+
+      <section class="detail-section outcome">
+        <h2>Outcome</h2>
+        <div class="stats" id="project-stats"></div>
+        <p id="project-outcome"></p>
+      </section>
     </main>
+    <footer><span>© <span id="year"></span> <span data-short-name></span></span><span>DESIGNED FOR THE OPEN WEB</span></footer>
     <script src="content.js"></script>
     <script src="project-detail.js"></script>
   </body>
