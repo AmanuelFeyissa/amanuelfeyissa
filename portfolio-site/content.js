@@ -7,9 +7,9 @@ window.portfolioData = {
   person: {
     name: "Amanuel Feyissa Kussa",
     shortName: "Amanuel Feyissa",
-    role: "Identity & Access Management Officer",
+    role: "Identity and Access Management Engineer | Cybersecurity Analyst | Data Scientist",
     location: "Addis Ababa, Ethiopia",
-    phone: "",
+    phone: "+251 9 43 32 32 23",
     linkedin: "https://www.linkedin.com/in/amanuelfeyissa/",
     github: "https://github.com/AmanuelFeyissa",
     availability: "Open to impactful security collaborations",
@@ -112,6 +112,58 @@ window.portfolioData = {
         { value: "4+ Yrs", label: "Platform Experience" }
       ],
       outcome: "This is less a single shipped feature than an ongoing capability: taking ownership of an enterprise identity platform end to end — automating what should be automated, and diagnosing performance and reliability issues methodically whenever the stack needs attention."
+    },
+    {
+      id: "04",
+      slug: "dula-ai-platform",
+      category: "SECURITY AI",
+      title: "Dula — Cybersecurity AI Platform",
+      description: "An open-source cybersecurity AI platform combining security operations, RAG-based Q&A, cyber threat intelligence, and security automation in a single toolkit.",
+      tags: ["RAG", "Cyber Threat Intel", "Security Automation", "Open Source"],
+      results: "Open-source platform unifying SecOps, threat intel, and RAG-based Q&A.",
+      link: "project.html?project=dula-ai-platform",
+      detailIntro: "Security teams juggle SecOps tooling, threat intel feeds, and ad-hoc research across separate tools. Dula brings them into one open-source platform, with retrieval-augmented Q&A over security knowledge at the center.",
+      status: "STATUS: ACTIVE DEVELOPMENT // TYPE: OPEN SOURCE",
+      brief: "Dula is a personal open-source project built to bring together the disconnected pieces of day-to-day security work — operational tooling, threat intelligence, and knowledge lookup — behind a single interface, using retrieval-augmented generation to make security knowledge queryable in natural language instead of buried in documentation and dashboards.",
+      approachType: "capabilities",
+      approach: [
+        "Built a security operations layer for common SecOps tasks alongside a cyber threat intelligence module for tracking and surfacing relevant threat data.",
+        "Implemented a Retrieval-Augmented Generation (RAG) pipeline so users can ask natural-language questions and get answers grounded in security documentation and intelligence data.",
+        "Added security automation capabilities to reduce repetitive manual work across the platform's modules.",
+        "Released the project as open source, structured for other practitioners to extend or self-host."
+      ],
+      outcomeStats: [
+        { value: "4", label: "Core Modules" },
+        { value: "RAG", label: "Q&A Engine" },
+        { value: "OSS", label: "Open Source" }
+      ],
+      outcome: "Dula is an ongoing open-source effort to consolidate security operations, threat intelligence, and knowledge retrieval into one AI-assisted platform, built and maintained alongside full-time enterprise IAM work."
+    },
+    {
+      id: "05",
+      slug: "dula-authenticator",
+      category: "OPEN SOURCE",
+      title: "Dula Authenticator",
+      description: "An open-source, cross-platform TOTP/HOTP authenticator built with Flutter, shipping to Windows, Linux, macOS, Android, iOS, and Web from a single codebase.",
+      tags: ["Flutter", "TOTP", "HOTP", "Cross-Platform"],
+      results: "One codebase shipping a 2FA authenticator to six platforms.",
+      link: "project.html?project=dula-authenticator",
+      detailIntro: "Most authenticator apps lock users into one ecosystem. Dula Authenticator is a single Flutter codebase that runs the same TOTP/HOTP experience on desktop, mobile, and web.",
+      status: "STATUS: ACTIVE DEVELOPMENT // PLATFORMS: 6",
+      brief: "Dula Authenticator is an open-source two-factor authentication app implementing the TOTP and HOTP standards, built in Flutter to reach Windows, Linux, macOS, Android, iOS, and Web from one shared codebase instead of maintaining separate native apps per platform.",
+      approachType: "steps",
+      approach: [
+        "Implemented the TOTP and HOTP algorithms to standard, ensuring compatibility with existing two-factor setups.",
+        "Built the UI and state management in Flutter to share the vast majority of the codebase across all six target platforms.",
+        "Handled platform-specific packaging and integration for desktop (Windows, Linux, macOS), mobile (Android, iOS), and Web builds.",
+        "Published the project as open source for the community to audit, self-host, or extend."
+      ],
+      outcomeStats: [
+        { value: "6", label: "Platforms Supported" },
+        { value: "TOTP/HOTP", label: "Protocols" },
+        { value: "1", label: "Shared Codebase" }
+      ],
+      outcome: "Dula Authenticator demonstrates a single Flutter codebase carrying a security-sensitive app across every major desktop, mobile, and web target — an open-source alternative to closed, single-platform authenticator apps."
     }
   ],
   experience: [
@@ -124,6 +176,18 @@ window.portfolioData = {
     { date: "2023 — 2025", degree: "MSc, Data Science", school: "Emerald International College", note: "Graduated with Distinction, GPA 3.7. Research: machine learning-based fraud detection in digital banking." },
     { date: "2019 — 2022", degree: "BSc, Computer Science", school: "Microlink Information Technology College", note: "Graduated with Great Distinction, GPA 3.8." }
   ],
-  certifications: [{ mark: "O", title: "OPSWAT File Security Associate", issuer: "OPSWAT" }, { mark: "AI", title: "AI for Developers", issuer: "Koenig Solutions" }, { mark: "PY", title: "Python Specialization", issuer: "University of Michigan" }, { mark: "AZ", title: "Azure AI Solution", issuer: "Microsoft" }, { mark: "FL", title: "Flutter Course for Programmers", issuer: "Code Studio" }],
-  recognition: "Certificate of Recognition from EmpowerID for completing a full-scale IAM deployment at Commercial Bank of Ethiopia (2025)."
+  // NOTE: `link` values are placeholders — replace each "#" with the real credential/verification URL.
+  certifications: [
+    { mark: "CEH", title: "Certified Ethical Hacker (CEH) v12", issuer: "EC-Council", note: "Credential #797458 · Verified · Aug 2023", link: "https://aspen.eccouncil.org/VerifyBadge?type=training&a=BN2v2P6j4+3BMF4+1s4t1A==" },
+    { mark: "O", title: "OPSWAT File Security Associate", issuer: "OPSWAT", note: "Credential recorded", link: "https://www.credly.com/badges/4d0bee92-58ca-4c02-8f46-a28994ba21b6" },
+    { mark: "AI", title: "AI for Developers", issuer: "Koenig Solutions", note: "Credential recorded", link: "https://rms.koenig-solutions.com/Trainer/WebinarCertificate.aspx?stdid=9219448&&wid=5738" },
+    { mark: "PY", title: "Python Specialization", issuer: "University of Michigan", note: "Credential recorded", link: "https://www.coursera.org/account/accomplishments/specialization/certificate/N4H2L54HTEYF" },
+    { mark: "AZ", title: "Azure AI Solution", issuer: "Microsoft", note: "Credential recorded", link: "https://learn.microsoft.com/en-us/users/amanuelfeyissakussa-4097/achievements/vjt8st8m?ref=https%3A%2F%2Fwww.linkedin.com%2F" },
+    { mark: "FL", title: "Flutter Course for Programmers", issuer: "Code Studio", note: "Credential recorded", link: "https://www.udemy.com/certificate/UC-37b61bef-45e2-4e11-b995-8099c07e7fae/" }
+  ],
+  awards: [
+    { title: "Best Performer of the Year", issuer: "CBE IS Security Division", note: "Recognized for exceptional contributions to IAM, cybersecurity operations, and strategic security initiatives (2026)." },
+    { title: "Best Team of the Year", issuer: "CBE IS Security Division — IAM Team", note: "Recognized for outstanding collaboration and excellence in delivering enterprise IAM solutions (2026)." },
+    { title: "Certificate of Recognition", issuer: "EmpowerID", note: "For completing a full-scale IAM deployment at Commercial Bank of Ethiopia (2025)." }
+  ]
 };

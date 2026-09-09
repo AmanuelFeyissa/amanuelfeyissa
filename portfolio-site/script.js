@@ -7,7 +7,6 @@ setText('[data-role]', data.person.role);
 setText('[data-intro]', data.intro);
 setText('[data-summary]', data.summary);
 setText('[data-availability]', data.person.availability);
-setText('[data-recognition]', data.recognition);
 setText('[data-location]', data.person.location);
 setText('[data-languages]', data.person.languages.join(' / '));
 document.querySelector('[data-linkedin]').href = data.person.linkedin;
@@ -19,7 +18,8 @@ document.querySelector('#skills-grid').innerHTML = data.skills.map((skill) => `<
 document.querySelector('#projects').innerHTML = data.projects.map((project) => `<a class="project" href="${project.link}" aria-label="View details for ${project.title}"><div class="project-id">${project.id}</div><div class="project-main"><p>${project.category}</p><h3>${project.title}</h3><p class="project-description">${project.description}</p><div class="tags">${project.tags.map((tag) => `<span>${tag}</span>`).join('')}</div></div><div class="project-result"><span>OUTCOME</span><p>${project.results}</p><span class="project-arrow" aria-hidden="true">↗</span></div></a>`).join('');
 document.querySelector('#experience-list').innerHTML = data.experience.map((job) => `<article class="job"><p class="period">${job.period}</p><div><h3>${job.role}</h3><p class="company">${job.company}</p><ul>${job.points.map((point) => `<li>${point}</li>`).join('')}</ul></div></article>`).join('');
 document.querySelector('#education').innerHTML = data.education.map((item) => `<article class="education-item"><span>${item.date}</span><h3>${item.degree}</h3><p>${item.school}</p><small>${item.note}</small></article>`).join('');
-document.querySelector('#certifications-grid').innerHTML = data.certifications.map((cert) => `<article class="cert-card"><div class="cert-mark">${esc(cert.mark)}</div><p>${cert.issuer}</p><h3>${cert.title}</h3><span>Credential recorded</span></article>`).join('');
+document.querySelector('#certifications-grid').innerHTML = data.certifications.map((cert) => `<a class="cert-card" href="${esc(cert.link || '#')}" target="_blank" rel="noreferrer"><div class="cert-mark">${esc(cert.mark)}</div><p>${cert.issuer}</p><h3>${cert.title}</h3><span>${esc(cert.note || 'Credential recorded')}</span></a>`).join('');
+document.querySelector('#recognition-list').innerHTML = data.awards.map((award) => `<p class="award"><strong>${esc(award.title)}</strong> — ${esc(award.issuer)}. ${esc(award.note)}</p>`).join('');
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('#nav-links');
 menuButton.addEventListener('click', () => { const open = nav.classList.toggle('open'); menuButton.setAttribute('aria-expanded', open); });
